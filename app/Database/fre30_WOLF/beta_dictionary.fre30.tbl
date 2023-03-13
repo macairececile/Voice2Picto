@@ -1,0 +1,339 @@
+--
+-- PostgreSQL database dump
+--
+
+SET statement_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: beta_dictionary; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE beta_dictionary (
+    token text,
+    lemma text,
+    tag text,
+    picto text,
+    disable boolean
+);
+
+
+--
+-- Data for Name: beta_dictionary; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY beta_dictionary (token, lemma, tag, picto, disable) FROM stdin;
+oui	\N	\N	ja.png	\N
+ouai	\N	\N	ja.png	\N
+non	\N	\N	neen.png	\N
+nan	\N	\N	neen.png	\N
+je	\N	\N	ik.png	\N
+moi	\N	\N	ik.png	\N
+mon	\N	\N	mijn.png	\N
+ma	\N	\N	mijn.png	\N
+mes	\N	\N	mijn.png	\N
+on	\N	\N	wij.png	\N
+nous	\N	\N	wij.png	\N
+notre	\N	\N	ons.png	\N
+le_nôtre	\N	\N	ons.png	\N
+tu	\N	\N	jij.png	\N
+toi	\N	\N	jij.png	\N
+ton	\N	\N	jouw.png	\N
+ta	\N	\N	jouw.png	\N
+tes	\N	\N	jouw.png	\N
+toi-même	\N	\N	jij.png	\N
+vous-même	\N	\N	jij.png	\N
+vous	\N	\N	jullie_vnw.png	\N
+votre	\N	\N	jouw.png	\N
+il	\N	\N	hij.png	\N
+lui	\N	\N	hij.png	\N
+elle	\N	\N	zij_enkelv.png	\N
+son	\N	\N	zijn_bvnw.png	\N
+sa	\N	\N	zijn_bvnw.png	\N
+ses	\N	\N	zijn_bvnw.png	\N
+ils	\N	\N	zij_meerv.png	\N
+elles	\N	\N	zij_meerv.png	\N
+leur	\N	\N	zij_meerv.png	\N
+ce	\N	\N	dit.png	\N
+cet	\N	\N	dit.png	\N
+cette	\N	\N	dit.png	\N
+ces	\N	\N	dit.png	\N
+ceux	\N	\N	dit.png	\N
+celui-ci	\N	\N	dit.png	\N
+celle-ci	\N	\N	dit.png	\N
+ceux-ci	\N	\N	dit.png	\N
+ce	\N	\N	dit.png	\N
+\N	A	\N	b.png	\N
+\N	B	\N	b.png	\N
+\N	C	\N	c.png	\N
+\N	D	\N	d.png	\N
+\N	E	\N	e.png	\N
+\N	F	\N	f.png	\N
+\N	G	\N	g.png	\N
+\N	H	\N	h.png	\N
+\N	I	\N	i.png	\N
+\N	J	\N	j.png	\N
+\N	K	\N	k.png	\N
+\N	L	\N	l.png	\N
+\N	M	\N	m.png	\N
+\N	N	\N	n.png	\N
+\N	O	\N	o.png	\N
+\N	P	\N	p.png	\N
+\N	Q	\N	q.png	\N
+\N	R	\N	r.png	\N
+\N	S	\N	s.png	\N
+\N	T	\N	t.png	\N
+\N	U	\N	u.png	\N
+\N	V	\N	v.png	\N
+\N	W	\N	w.png	\N
+\N	Y	\N	y.png	\N
+\N	Z	\N	z.png	\N
+!	\N	\N	!.png	\N
+\N	janvier	\N	januari.png	\N
+\N	février	\N	februari.png	\N
+\N	mars	\N	maart.png	\N
+\N	avril	\N	april.png	\N
+\N	mai	\N	mei.png	\N
+\N	juin	\N	juni.png	\N
+\N	juilet	\N	juli.png	\N
+\N	août	\N	augustus.png	\N
+\N	septembre	\N	september.png	\N
+\N	octobre	\N	oktober.png	\N
+\N	novembre	\N	november.png	\N
+\N	décembre	\N	december.png	\N
+\N	lundi	\N	maandag.png	\N
+\N	mardi	\N	dinsdag.png	\N
+\N	mercredi	\N	woensdag.png	\N
+\N	jeudi	\N	donderdag.png	\N
+\N	vendredi	\N	vrijdag.png	\N
+\N	samedi	\N	zaterdag.png	\N
+\N	dimanche	\N	zondag.png	\N
+\N	photo	\N	foto.png	\N
+\N	quoi	\N	wat.png	\N
+\N	quel	\N	wat.png	\N
+moins	\N	\N	minder.png	\N
+quelque_chose	\N	\N	iets.png	\N
+merci	\N	\N	bedanken.png	\N
+thanks	\N	\N	bedanken.png	\N
+coca	\N	\N	cola.png	\N
+coca_cola	\N	\N	cola.png	\N
+beaucoup	\N	\N	veel.png	\N
+très	\N	\N	veel.png	\N
+pourquoi	\N	\N	waarom.png	\N
+petit_ami	\N	\N	mijn-vriend.png	\N
+petite_amie	\N	\N	mijn-vriendin.png	\N
+frites	\N	\N	frieten.png	\N
+\N	délicieux	\N	lekker.png	\N
+\N	fun	\N	leuk.png	\N
+\N	honnête	\N	braaf.png	\N
+\N	vouloir	\N	willen.png	\N
+\N	hier	\N	gisteren.png	\N
+\N	bleu	\N	blauw.png	\N
+\N	rouge	\N	rood.png	\N
+\N	vert	\N	groen.png	\N
+\N	jaune	\N	geel.png	\N
+\N	tout	\N	alles.png	\N
+d'accord	\N	\N	goed.png	\N
+ok	\N	\N	goed.png	\N
+oki	\N	\N	goed.png	\N
+okay	\N	\N	goed.png	\N
+\N	bien	\N	goed.png	\N
+\N	bon	\N	goed.png	\N
+super	\N	\N	goed.png	\N
+quand	\N	\N	wanneer.png	\N
+et	\N	\N	en.png	\N
+&	\N	\N	en.png	\N
+\N	homme	\N	man.png	\N
+\N	joli	\N	mooi.png	\N
+\N	harceler	\N	pesten.png	\N
+\N	venir	\N	komen.png	\N
+cochon_d'inde	\N	\N	cavia.png	\N
+cochons_d'inde	\N	\N	cavia.png	\N
+bd	\N	\N	stripverhaal.png	\N
+bds	\N	\N	stripverhaal.png	\N
+bande_dessinée	\N	\N	stripverhaal.png	\N
+bandes_dessinées	\N	\N	stripverhaal.png	\N
+bouteille_d'eau	\N	\N	flessenwater.png	\N
+bouteilles_d'eau	\N	\N	flessenwater.png	\N
+\N	glace	\N	ijsje.png	\N
+\N	jouer	\N	spelen.png	\N
+où	\N	\N	waar.png	\N
+ou	\N	\N	kiezen.png	\N
+\N	lequel	\N	welk.png	\N
+\N	vélo	\N	fiets.png	\N
+VTT	\N	\N	fiets.png	\N
+\N	couloir	\N	gang.png	\N
+\N	petit	\N	klein_ding.png	\N
+dans	\N	\N	in.png	\N
+sur	\N	\N	op.png	\N
+à_côté	\N	\N	naast.png	\N
+au-dessous_de	\N	\N	onder.png	\N
+en_dessous	\N	\N	onder.png	\N
+sous	\N	\N	onder.png	\N
+derrière	\N	\N	achter.png	\N
+à_l'intérieur	\N	\N	binnen.png	\N
+dedans	\N	\N	binnen.png	\N
+en_haut	\N	\N	boven_vz.png	\N
+au_dessus	\N	\N	boven_vz.png	\N
+à_l'extérieur	\N	\N	buiten.png	\N
+avec	\N	\N	met.png	\N
+dehors	\N	\N	uit_vz.png	\N
+en_dehors	\N	\N	uit_vz.png	\N
+de	\N	\N	van.png	\N
+avant	\N	\N	voor_ruimte.png	\N
+pour	\N	\N	voor_iemand.png	\N
+sans	\N	\N	zonder.png	\N
+\N	idée	\N	idee.png	\N
+numéro_de_téléphone	\N	\N	telefoon.png	\N
+numéro_de_tel	\N	\N	telefoon.png	\N
+\N	conduire	\N	rijden.png	\N
+?	\N	\N	_question.png	\N
+\N	vivre	\N	wonen.png	\N
+\N	anxieux	\N	bang.png	\N
+demain	\N	\N	morgen_gisteren.png	\N
+\N	classe	\N	klas.png	\N
+\N	premier	\N	eerste_abs.png	\N
+sac_à_main	\N	\N	handtas.png	\N
+\N	commencer	\N	begin.png	\N
+ensemble	\N	\N	samen.png	\N
+toujours	\N	\N	altijd.png	\N
+pour_toujours	\N	\N	altijd.png	\N
+\N	feu	\N	vuur.png	\N
+mais	\N	\N	maar.png	\N
+qui	\N	\N	wie.png	\N
+tout_le_monde	\N	\N	iedereen.png	\N
+\N	chaque	\N	iedereen.png	\N
+\N	chacun	\N	iedereen.png	\N
+déso	\N	\N	sorry.png	\N
+\N	désolé	\N	sorry.png	\N
+\N	content	\N	blij.png	\N
+en_colère	\N	\N	boos.png	\N
+\N	faire	\N	doen.png	\N
+carte_de_voeux	\N	\N	wenskaart.png	\N
+carte_de_vœux	\N	\N	wenskaart.png	\N
+un_autre	\N	\N	ander.png	\N
+noël	\N	\N	kerstmis.png	\N
+halloween	\N	\N	pompoen.png	\N
+\N	minute	\N	minuut.png	\N
+\N	coach	\N	bus.png	\N
+\N	bible	\N	bijbel.png	\N
+\N	prendre	\N	nemen.png	\N
+à	\N	\N	naar.png	\N
+\N	couler	\N	zinken.png	\N
+\N	sombrer	\N	zinken.png	\N
+100	\N	\N	honderd.png	\N
+1	\N	\N	ding.png	\N
+2	\N	\N	twee.png	\N
+3	\N	\N	drie.png	\N
+4	\N	\N	vier.png	\N
+5	\N	\N	vijf.png	\N
+6	\N	\N	zes.png	\N
+7	\N	\N	zeven.png	\N
+8	\N	\N	acht.png	\N
+9	\N	\N	negen.png	\N
+10	\N	\N	tien.png	\N
+11	\N	\N	elf.png	\N
+12	\N	\N	twaalf.png	\N
+\N	toilette	\N	toilet.png	\N
+en_avant	\N	\N	vooruit.png	\N
+vers_l'avant	\N	\N	vooruit.png	\N
+\N	rond	\N	rond_bnw.png	\N
+\N	ami	\N	vriend.png	\N
+\N	monsieur	\N	mijnheer.png	\N
+marchand_ambulant	\N	\N	marktkramer.png	\N
+\N	hamac	\N	hangmat.png	\N
+carte_de_crédit	\N	\N	betaalkaart.png	\N
+carte_de_paiement	\N	\N	betaalkaart.png	\N
+\N	living	\N	living.png	\N
+\N	salon	\N	living.png	\N
+\N	jardin	\N	tuin.png	\N
+\N	jonquille	\N	narcis.png	\N
+\N	crocus	\N	krokus.png	\N
+\N	citrouille	\N	pompoen.png	\N
+\N	beignet	\N	smoutebol.png	\N
+\N	fer	\N	strijken.png	\N
+playmobil	\N	\N	playmobil.png	\N
+playstation	\N	\N	playstation2.png	\N
+pompe_à_essence	\N	\N	benzinepomp.png	\N
+\N	soeur	\N	zus.png	\N
+\N	sœur	\N	zus.png	\N
+\N	pictogramme	\N	prent.png	\N
+\N	picto	\N	prent.png	\N
+\N	pictos	\N	prent.png	\N
+\N	relaxation	\N	relaxatie.png	\N
+\N	détente	\N	relaxatie.png	\N
+ça_va	\N	\N	hoe.png	\N
+comment	\N	\N	hoe.png	\N
+comment_ça_va	\N	\N	hoe.png	\N
+comment_vas-tu	\N	\N	hoe.png	\N
+comment_allez-vous	\N	\N	hoe.png	\N
+\N	bise	\N	kus.png	\N
+\N	bisou	\N	kus.png	\N
+flat	\N	\N	flat.png	\N
+\N	amour	\N	liefde.png	\N
+\N	café	\N	koffie.png	\N
+\N	bébé	\N	lief.png	\N
+\N	ravitailler	\N	tanken.png	\N
+faire_le_plein	\N	\N	tanken.png	\N
+angleterre	\N	\N	vlag-groot-brittani.png	\N
+uk	\N	\N	vlag-groot-brittani.png	\N
+belgique	\N	\N	belgische-vlag.png	\N
+\N	hamburger	\N	hamburger.png	\N
+france	\N	\N	franse-vlag.png	\N
+\N	dormir	\N	slapen.png	\N
+\N	baptisé	\N	doopvont.png	\N
+hey	\N	\N	wuiven.png	\N
+hi	\N	\N	wuiven.png	\N
+hello	\N	\N	wuiven.png	\N
+yo	\N	\N	wuiven.png	\N
+slt	\N	\N	wuiven.png	\N
+salut	\N	\N	wuiven.png	\N
+bonjour	\N	\N	wuiven.png	\N
+bonsoir	\N	\N	wuiven.png	\N
+coucou	\N	\N	wuiven.png	\N
+\N	saluer	\N	groeten.png	\N
+\N	salutation	\N	groeten.png	\N
+cordialement	\N	\N	groeten.png	\N
+père_noël	\N	\N	kerstman.png	\N
+choux_de_bruxelles	\N	\N	spruit.png	\N
+email	\N	\N	email.png	\N
+mail	\N	\N	email.png	\N
+\N	sucette	\N	lolly.png	\N
+\N	lunette	\N	bril.png	\N
+\N	grenouillère	\N	pyjama.png	\N
+\N	télécommande	\N	afstandsbediening.png	\N
+\N	félicitation	\N	bravo.png	\N
+bravo	\N	\N	bravo.png	\N
+n'importe_qui	\N	\N	iemand.png	\N
+orteils	\N	\N	teen.png	\N
+omg	\N	\N	verbaasd.png	\N
+\N	étonné	\N	verbaasd.png	\N
+\N	surpris	\N	verbaasd.png	\N
+stp	\N	\N	bidden.png	\N
+svp	\N	\N	bidden.png	\N
+lol	\N	\N	lachen.png	\N
+haha	\N	\N	lachen.png	\N
+mdr	\N	\N	lachen.png	\N
+ptdr	\N	\N	lachen.png	\N
+frérot	\N	\N	broer.png	\N
+\N	future_picto	\N	TimePictoFuture.png	\N
+\N	past_picto	\N	TimePictoPast.png	\N
+\N	irrealis_picto	\N	TimePictoIrrealis.png	\N
+pas	\N	ADV	niet.png	\N
+pas	\N	ADV	geen.png	t
+\.
+
+
+--
+-- PostgreSQL database dump complete
+--
+
