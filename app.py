@@ -153,8 +153,8 @@ class pictoApp:
         filter_lemma = False
         sense_compression_clusters = None
         wn = WordnetHelper.wn30()
-        self.neural_disambiguator = NeuralDisambiguator("models/wsd/data_wsd",
-                                                        ["models/wsd/model_weights_wsd0_camembert_base"],
+        self.neural_disambiguator = NeuralDisambiguator("../model_wsd/data_wsd",
+                                                        ["../model_wsd/model_weights_wsd0_camembert_base"],
                                                         clear_text,
                                                         batch_size, wn=wn, hf_model="camembert-base")
         self.neural_disambiguator.lowercase_words = lowercase
