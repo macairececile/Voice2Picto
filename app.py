@@ -255,7 +255,7 @@ class pictoApp:
             picto_id = picto_ids[i]
 
             # Get the image path and prepare the image to display it
-            img_path = '/home/cecilemacaire/Bureau/Cloud/PROPICTO_RESSOURCES/ARASAAC/ARASAAC_Pictos_All/' + str(
+            img_path = '/data/macairec/Cloud/PROPICTO_RESSOURCES/ARASAAC/ARASAAC_Pictos_All/' + str(
                 picto_id) + '.png'
 
             self.images[i] = Image.open(img_path)
