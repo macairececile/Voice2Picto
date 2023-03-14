@@ -76,7 +76,7 @@ La liste des erreurs contenues dans la traduction proposée n'est pas exhaustive
 ## Lien utiles <a name="liens_utiles"></a>
 
 Le système de reconnaissance automatique de la parole est basé sur la boîte à outils Kaldi. </br>
-Le système de désambiguïsation s'appuie sur le toolkit <https://github.com/getalp/disambiguate> implémenté en python. La
-banque de pictogrammes utilisée est [ARASAAC](https://arasaac.org/). </br>
+Le système de désambiguïsation s'appuie sur le toolkit <https://github.com/getalp/disambiguate> implémenté en python. </br>
+La banque de pictogrammes utilisée est [ARASAAC](https://arasaac.org/). </br>
 
 Pour toutes informations, vous pouvez nous contacter par [mail](cecile.macaire@univ-grenoble-alpes.fr).
