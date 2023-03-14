@@ -7,8 +7,8 @@ lexicale.
 ## Sommaire
 
 * [Installation](#installation)
-* [Présentation de l'application](#presentation)
-* [Lien utiles](#links)
+* [Présentation de l'application](#presentation_app)
+* [Lien utiles](#liens_utiles)
 
 ## Installation
 
@@ -46,6 +46,7 @@ unzip ARASAAC_pictos.zip -d /voice2picto
 ## Présentation de l'application
 
 L'interface se présente comme ceci : </br>
+
 ![](/res/images/voice2picto1.png "Accueil")
 
 * _**Sélection du mode**_ / permet de choisir entre deux modes :
