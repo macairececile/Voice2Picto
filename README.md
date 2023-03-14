@@ -6,9 +6,9 @@ lexicale.
 
 ## Sommaire
 
-* [Installation](#requirements)
+* [Installation](#installation)
 * [Présentation de l'application](#presentation)
-* [Liens utiles](#links)
+* [Lien utiles](#links)
 
 ## Installation
 
