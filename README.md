@@ -43,7 +43,7 @@ unzip model_wsd.zip -d /voice2picto
 unzip ARASAAC_pictos.zip -d /voice2picto
 ```
 
-## Présentation de l'application
+## Présentation de l'application <a name="presentation_app"></a>
 
 L'interface se présente comme ceci : </br>
 
@@ -73,7 +73,7 @@ La liste des erreurs contenues dans la traduction proposée n'est pas exhaustive
 - mot ne correspondant pas exactement au sens du mot,
 - mot incorrect car la transcription de la parole est erronée.
 
-## Lien utiles
+## Lien utiles <a name="liens_utiles"></a>
 
 Le système de reconnaissance automatique de la parole est basé sur la boîte à outils Kaldi. </br>
 Le système de désambiguïsation s'appuie sur le toolkit <https://github.com/getalp/disambiguate> implémenté en python. La
