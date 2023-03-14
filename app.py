@@ -255,7 +255,7 @@ class pictoApp:
             picto_id = picto_ids[i]
 
             # Get the image path and prepare the image to display it
-            img_path = '/data/macairec/Cloud/PROPICTO_RESSOURCES/ARASAAC/ARASAAC_Pictos_All/' + str(
+            img_path = '../ARASAAC_pictos/' + str(
                 picto_id) + '.png'
 
             self.images[i] = Image.open(img_path)
@@ -305,15 +305,16 @@ class pictoApp:
                 # Decode
                 transcription = clean_transcription(self.reco.decode("tmp/output.wav"))
 
-                self.text_output.insert(tk.END, f"Parole reçue : {transcription}")
-                self.text_output.insert(tk.END, f"\nTraduction en cours ...")
+                if transcription != "":
+                    self.text_output.insert(tk.END, f"Parole reçue : {transcription}")
+                    self.text_output.insert(tk.END, f"\nTraduction en cours ...")
+                    self.display_pictograms(transcription)
+                    print("*** Done displaying pictograms ***")
+                    # Display pictograms
+                    self.text_timing.insert(tk.END, f"Temps de décodage : \n{int(time.time() - asr_time_start):02d}s")
+                else:
+                    self.text_output.insert(tk.END, f"Aucune parole détectée, veuillez recommencer.")
                 self.text_output.config(state=tk.DISABLED)
-
-                # Display pictograms
-                self.display_pictograms(transcription)
-                print("*** Done displaying pictograms ***")
-
-                self.text_timing.insert(tk.END, f"Temps de décodage : \n{int(time.time() - asr_time_start):02d}s")
                 self.text_timing.config(state=tk.DISABLED)
 
         # Enable the record button
@@ -368,15 +369,16 @@ class pictoApp:
         # Decode
         transcription = clean_transcription(self.reco.decode("tmp/output.wav"))
 
-        self.text_output.insert(tk.END, f"Parole reçue : {transcription}")
-        self.text_output.insert(tk.END, f"\nTraduction en cours ...")
+        if transcription != "":
+            self.text_output.insert(tk.END, f"Parole reçue : {transcription}")
+            self.text_output.insert(tk.END, f"\nTraduction en cours ...")
+            self.display_pictograms(transcription)
+            print("*** Done displaying pictograms ***")
+            # Display pictograms
+            self.text_timing.insert(tk.END, f"Temps de décodage : \n{int(time.time() - asr_time_start):02d}s")
+        else:
+            self.text_output.insert(tk.END, f"Aucune parole détectée, veuillez recommencer.")
         self.text_output.config(state=tk.DISABLED)
-
-        # Display pictograms
-        self.display_pictograms(transcription)
-        print("*** Done displaying pictograms ***")
-
-        self.text_timing.insert(tk.END, f"Temps de décodage : \n{int(time.time() - asr_time_start):02d}s")
         self.text_timing.config(state=tk.DISABLED)
 
         # Enable the record button
